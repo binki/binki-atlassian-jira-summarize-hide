@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name binki-atlassian-jira-summarize-hide
-// @version 1.0.0
+// @version 1.0.1
 // @homepageURL https://github.com/binki/binki-atlassian-jira-summarize-hide
 // @match https://*.atlassian.net/*
 // ==/UserScript==
