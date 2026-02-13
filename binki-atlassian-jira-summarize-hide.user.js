@@ -7,10 +7,16 @@
 
 (async () => {
   const style = document.createElement('style');
-  style.textContent = `/* This is the button which appears when the summary is pre-collapsed. */
+  style.textContent = `/* This is the button which appears in the “Improve this issue” button menu */
+  button[data-testid='issue.issue-view.views.issue-base.foundation.quick-add.improve-issue.summarize-comments'],
+  /* This is the button which appears when the summary is pre-collapsed. */
   button[data-testid='servicedesk-smart-request-summary-trigger.ui.jira-smart-summary-standard-button'],
-  /* This is the expanded summary should it be displayed pre-expanded. */
-  div[data-testid='servicedesk-smart-request-summary.ui.ai-container'] {
+  /* This is the updated button which looks like a “reverse sort direction” button, see #1. */
+  button[data-testid='issue-smart-request-summary-trigger.ui.jira-smart-summary-standard-button'],
+  /* This is the expanded summary should it be displayed pre-expanded for servicedesk (CSM). */
+  div[data-testid='servicedesk-smart-request-summary.ui.ai-container'],
+  /* This is the expanded summary should it be displayed pre-expanded for normal Jira, see #1. */
+  div[data-testid='issue-smart-request-summary.ui.ai-container'] {
     display: none;
   }
   `;
