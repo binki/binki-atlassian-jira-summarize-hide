@@ -16,7 +16,9 @@
   /* This is the expanded summary should it be displayed pre-expanded for servicedesk (CSM). */
   div[data-testid='servicedesk-smart-request-summary.ui.ai-container'],
   /* This is the expanded summary should it be displayed pre-expanded for normal Jira, see #1. */
-  div[data-testid='issue-smart-request-summary.ui.ai-container'] {
+  div[data-testid='issue-smart-request-summary.ui.ai-container'],
+  /* This is the right sidebar summary see #2 */
+  div[data-testid='servicedesk-ai-context-common.ui.ai-context-container.ai-container'] {
     display: none;
   }
   `;
